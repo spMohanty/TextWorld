@@ -1,5 +1,18 @@
+include requirements.txt
+include setup.sh
+include glk_build.py
+include glk.abi3.so
+
+
+recursive-include src/ *
+
 include textworld/generator/data/logic/*.twl
 include textworld/generator/data/text_grammars/*.twg
+
+include textworld/logic/logic.ebnf
+include textworld/textgen/textgen.ebnf
+
+recursive-include textworld/thirdparty *
 
 recursive-include textworld/render/tmpl *
 recursive-include textworld/thirdparty/glulx git-glulx-ml
