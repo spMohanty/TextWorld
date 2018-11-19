@@ -40,7 +40,7 @@ class CustomBuildPy(build_py):
 
 setup(
     name='textworld-py',
-    version='0.0.3.2',
+    version='0.0.3.3',
     author='',
     cmdclass={
         'build_py': CustomBuildPy,
